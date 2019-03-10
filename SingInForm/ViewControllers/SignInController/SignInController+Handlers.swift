@@ -27,7 +27,7 @@ import UIKit
 extension SignInController {
     // handler for sign in button
     @objc func signInAction() {
-        // first we check for all dats to be correct
+        // first we check for all data to be correct
         if validate() {
             //print("signIn with values: email: \(emailTextField.text ?? ""), password: \(passwordTextField.text ?? "")")
         }
