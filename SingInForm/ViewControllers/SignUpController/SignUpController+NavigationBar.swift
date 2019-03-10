@@ -50,9 +50,10 @@ extension SignUpController: UINavigationBarDelegate {
             userInfo.updateValue(user, forKey: "User")
             
             // post message to application
-            navigationController?.popToRootViewController(animated: true)
-            // hide sing up controller
             post(.signupAndLogin, userInfo: userInfo)
+            
+            // hide sing up controller
+            navigationController?.popToRootViewController(animated: true)
         }
     }
 }
